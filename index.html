@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="title">Add Image / icon</div>
+  </div>
+
+  <div class="image">
+    <div class="txt">Uploaad Image </div>
+    <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)" style="display:none">
+    <button class="btn" id="updateDetails">choose from device</button>
+  </div>
+  
+  <dialog id="favDialog">
+    <div class="container">
+      <button class="btn-cln" id="cancel">X</button>
+      <div class="frame" id="frame">
+        <img id="previewImage" src="#" />
+      </div>
+      <div class="button-container">
+        <button class="btn" id="btn-origen">Origenal</button>
+        <img src="asset/user_image_frame_1.png" id="btn-heart" class="btn-img">
+        <img src="asset/user_image_frame_3.png" id="btn-circle" class="btn-img">
+        <img src="asset/user_image_frame_2.png" id="btn-square" class="btn-img">
+        <img src="asset/user_image_frame_4.png" id="btn-square2" class="btn-img">
+      </div>
+      <div>
+        <button class="btn" id="btn-save">Use this image</button>
+      </div>
+  </div>
+</dialog>
+
+<div class="container" id="block" style="display: none;">
+  <div class="frame" id="frame2">
+    <img id="previewImage2" src="#" />
+  </div>
+</div>
+
+  <script src="index.pack.js"></script>
+</body>
+</html>

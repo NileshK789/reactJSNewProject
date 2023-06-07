@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*body {
+  background:  rgb(234, 232, 232);
+}
+
+:root {
+  --heart:"M150 43.4375C125.138 -24.05 0 -14.025 0 88.0375C0 138.887 38.25 206.55 150 275.5C261.75 206.55 300 138.887 300 88.0375C300 -13.4375 175 -24.45 150 43.4375V43.4375Z" ;
+}
+
+.title{
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame { 
+  height: 300px;
+  width: 300px;
+  position: relative;
+  
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: -2px 1px 16px 9px rgb(166, 162, 162);
+  border-radius: 5px;
+}
+
+.square2 {
+  width: 290px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: -2px 1px 16px 9px black;
+  border-radius: 4px;
+}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -2px 1px 16px 2px black;
+  height: 200px;
+  width: 200px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.heart {
+  height: 300px;
+  width: 300px;
+  position:relative;
+  clip-path: path(var(--heart));
+  
+ 
+}
+
+.btn {
+  border: none;
+  font-size: 1rem;
+  background-color: #1769e0;
+  padding: 1em 2em; 
+  margin: 1em;
+  border-radius: 5px;
+  text-transform: capitalize; 
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 2px 4px 0px grey;
+  -webkit-box-shadow: 2px 2px 4px 0px grey;
+  -moz-box-shadow: 2px 2px 4px 0px grey;
+  
+}
+
+ .btn{
+  color: #fff;
+  background-color: #1172c2;
+}
+
+.btn:hover{
+  animation: backwards;
+  background-color: rgb(25, 173, 141);
+}
+
+.btn-cln{
+  font-size: 1rem;
+  background-color: #1769e0;
+  border-radius: 5px;
+  text-transform: capitalize; 
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top:5px;
+  right:5px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-img{
+  border: 1px solid gray;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+}
+
+.nav {
+  display: block;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  box-shadow: 2px 2px 4px 0px grey;
+  -webkit-box-shadow: 2px 2px 4px 0px grey;
+  -moz-box-shadow: 2px 2px 4px 0px grey;
+}
+
+.title{
+  font-size: xx-large;
+ 
+}
+
+.image{
+  margin: 10px;
+  border: 1px solid  grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.image .txt{
+
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 100%;
+ 
+}
